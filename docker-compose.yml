@@ -1,0 +1,24 @@
+services:
+  mcp-ga4:
+    container_name: mcp-ga4
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mcp-ga4
+    stdin_open: true # equivalent to docker run -i
+    tty: false        # better terminal handling
+    ports:
+      - "${MCP_PORT:-8000}:8000"  # For streamable HTTP server
+    volumes:
+      - ./google-credentials.json:/app/google-credentials.json:ro
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/google-credentials.json
+      - MCP_TRANSPORT=${MCP_TRANSPORT:-streamable-http}
+      - MCP_DEBUG=${MCP_DEBUG:-true}
+      - MCP_LOG_LEVEL=${MCP_LOG_LEVEL:-DEBUG}
+      - MCP_PATH=${MCP_PATH:-/mcp}
+      - MCP_SERVER_REQUEST_TIMEOUT=${MCP_SERVER_REQUEST_TIMEOUT:-10000}
+      - MCP_REQUEST_TIMEOUT_RESET_ON_PROGRESS=${MCP_REQUEST_TIMEOUT_RESET_ON_PROGRESS:-true}
+      - MCP_REQUEST_MAX_TOTAL_TIMEOUT=${MCP_REQUEST_MAX_TOTAL_TIMEOUT:-60000}
+    restart: no # Since we want the container to be removed when stopped 
+  

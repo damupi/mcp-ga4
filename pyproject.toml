@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-ga4"
+version = "0.1.0"
+description = "MCP server for Google Analytics 4"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]==1.10.1",
+    "google-auth>=2.22.0",
+    "google-analytics-admin>=0.17.0",
+    "google-analytics-data>=0.16.0",
+    "python-dotenv>=0.19.0",
+    "google-api-python-client>=2.0.0",
+    "google-auth-oauthlib>=1.0.0",
+    "google-auth-httplib2>=0.1.0",
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+    "requests>=2.31.0",
+]
+keywords = ["google analytics", "ga4", "mcp", "server"]
+
+classifiers = [
+    "Development Status :: 1.0 - Production/Stable",
+    "Programming Language :: Python :: 3.12",
+]
+
+[[project.authors]]
+name = "David M. Pino"
+email = "david.muleropino@gdcgroup.com"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["mcp_ga4"]
+
+[project.scripts]
+mcp-ga4 = "mcp_ga4.server:main"

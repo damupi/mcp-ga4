@@ -1,0 +1,14 @@
+.env
+.DS_Store
+.idea
+.vscode
+.pytest_cache
+.coverage
+.coverage.*
+google-credentials.json
+token.json
+.coverage.*
+.cursorrules
+
+__pycache__
+*.egg-info
