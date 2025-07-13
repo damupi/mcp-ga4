@@ -1,40 +1,60 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
+requires = [ "setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mcp-ga4"
-version = "0.1.0"
-description = "MCP server for Google Analytics 4"
-readme = "README.md"
-requires-python = ">=3.12"
+name = "workspace-mcp"
+version = "1.1.5"
+description = "Google Analytics 4 (GA4) MCP Server for accessing GA4 data and reports"
+keywords = [ "mcp", "google", "workspace", "llm", "ai", "claude", "model", "context", "protocol", "server"]
+requires-python = ">=3.11"
 dependencies = [
-    "mcp[cli]==1.10.1",
-    "google-auth>=2.22.0",
-    "google-analytics-admin>=0.17.0",
-    "google-analytics-data>=0.16.0",
-    "python-dotenv>=0.19.0",
-    "google-api-python-client>=2.0.0",
-    "google-auth-oauthlib>=1.0.0",
-    "google-auth-httplib2>=0.1.0",
-    "fastapi>=0.104.0",
-    "uvicorn>=0.24.0",
-    "requests>=2.31.0",
+ "fastapi>=0.115.12",
+ "fastmcp>=2.3.3",
+ "google-api-python-client>=2.168.0",
+ "google-auth-httplib2>=0.2.0",
+ "google-auth-oauthlib>=1.2.2",
+ "httpx>=0.28.1",
+ "pyjwt>=2.10.1",
+ "tomlkit",
 ]
-keywords = ["google analytics", "ga4", "mcp", "server"]
-
 classifiers = [
-    "Development Status :: 1.0 - Production/Stable",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Communications :: Chat",
+    "Topic :: Office/Business",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed"
 ]
 
 [[project.authors]]
-name = "David M. Pino"
-email = "david.muleropino@gdcgroup.com"
+name = "Taylor Wilsdon"
+email = "taylor@taylorwilsdon.com"
 
-[tool.setuptools]
-package-dir = {"" = "src"}
-packages = ["mcp_ga4"]
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://workspacemcp.com"
+Repository = "https://github.com/taylorwilsdon/google_workspace_mcp"
+Documentation = "https://github.com/taylorwilsdon/google_workspace_mcp#readme"
+Issues = "https://github.com/taylorwilsdon/google_workspace_mcp/issues"
+Changelog = "https://github.com/taylorwilsdon/google_workspace_mcp/releases"
 
 [project.scripts]
-mcp-ga4 = "mcp_ga4.server:main"
+workspace-mcp = "main:main"
+
+[tool.setuptools]
+packages = [ "auth", "core", "ga4"]
+py-modules = [ "main"]

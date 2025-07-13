@@ -1,0 +1,1 @@
+# This file marks the 'ga4' directory (Goolgle Analytics 4 ) )as a Python package.
