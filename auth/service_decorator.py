@@ -20,8 +20,8 @@ from auth.scopes import (
 
 # Service configuration mapping
 SERVICE_CONFIGS = {
-    "ga4": {"service": "analyticsdata", "version": "v1beta"},
-    "ga4_admin": {"service": "analyticsadmin", "version": "v1beta"}
+    "ga4_admin": {"service": "analyticsadmin", "version": "v1beta"},
+    "ga4_data": {"service": "analyticsdata", "version": "v1beta"}
 }
 
 
@@ -32,7 +32,7 @@ SCOPE_GROUPS = {
     "ga4_edit": GOOGLE_ANALYTICS_EDIT_SCOPE,
     "ga4_manage_users": GOOGLE_ANALYTICS_MANAGE_USERS_SCOPE,
     "ga4_manage_users_readonly": GOOGLE_ANALYTICS_MANAGE_USERS_READONLY_SCOPE,
-    "ga4_provision": GOOGLE_ANALYTICS_PROVISION_SCOPE,
+    "ga4_provision": GOOGLE_ANALYTICS_PROVISION_SCOPE
 }
 
 # Service cache: {cache_key: (service, cached_time, user_email)}

@@ -6,6 +6,7 @@
 .coverage
 .coverage.*
 google-credentials.json
+client-secret.json
 token.json
 .coverage.*
 .cursorrules
