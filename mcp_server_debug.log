@@ -1,0 +1,365 @@
+2025-07-13 12:26:31,207 - core.utils - INFO - 47331 - MainThread [utils.check_credentials_directory_permissions:47] - Created credentials directory with proper permissions: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 12:26:31,207 - core.server - INFO - 47331 - MainThread [server.set_transport_mode:50] - Transport mode set to: stdio
+2025-07-13 12:26:31,207 - auth.oauth_callback_server - INFO - 47331 - MainThread [oauth_callback_server.ensure_oauth_callback_available:235] - Creating minimal OAuth server instance for http://localhost:8000
+2025-07-13 12:26:31,207 - auth.oauth_callback_server - INFO - 47331 - MainThread [oauth_callback_server.ensure_oauth_callback_available:239] - Starting minimal OAuth server for stdio mode
+2025-07-13 12:26:31,315 - auth.oauth_callback_server - INFO - 47331 - MainThread [oauth_callback_server.start:152] - Minimal OAuth server started on localhost:8000
+2025-07-13 12:26:31,315 - auth.oauth_callback_server - INFO - 47331 - MainThread [oauth_callback_server.ensure_oauth_callback_available:242] - Minimal OAuth server successfully started on http://localhost:8000
+2025-07-13 12:27:25,746 - auth.oauth_callback_server - INFO - 47331 - MainThread [oauth_callback_server.stop:175] - Minimal OAuth server stopped
+2025-07-13 12:27:29,884 - core.utils - INFO - 47604 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 12:27:29,884 - core.server - INFO - 47604 - MainThread [server.set_transport_mode:50] - Transport mode set to: stdio
+2025-07-13 12:27:29,884 - auth.oauth_callback_server - INFO - 47604 - MainThread [oauth_callback_server.ensure_oauth_callback_available:235] - Creating minimal OAuth server instance for http://localhost:8000
+2025-07-13 12:27:29,884 - auth.oauth_callback_server - INFO - 47604 - MainThread [oauth_callback_server.ensure_oauth_callback_available:239] - Starting minimal OAuth server for stdio mode
+2025-07-13 12:27:29,991 - auth.oauth_callback_server - INFO - 47604 - MainThread [oauth_callback_server.start:152] - Minimal OAuth server started on localhost:8000
+2025-07-13 12:27:29,992 - auth.oauth_callback_server - INFO - 47604 - MainThread [oauth_callback_server.ensure_oauth_callback_available:242] - Minimal OAuth server successfully started on http://localhost:8000
+2025-07-13 12:27:41,012 - auth.oauth_callback_server - INFO - 47604 - MainThread [oauth_callback_server.stop:175] - Minimal OAuth server stopped
+2025-07-13 12:28:33,352 - core.utils - INFO - 47962 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 12:28:33,352 - core.server - INFO - 47962 - MainThread [server.set_transport_mode:50] - Transport mode set to: streamable-http
+2025-07-13 12:28:33,359 - mcp.server.streamable_http_manager - INFO - 47962 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 12:30:39,647 - mcp.server.streamable_http_manager - INFO - 47962 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: c6df44091d6e46848958ebcbd09449d7
+2025-07-13 12:30:45,328 - mcp.server.lowlevel.server - INFO - 47962 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 12:31:02,915 - mcp.server.lowlevel.server - INFO - 47962 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 12:31:36,464 - mcp.server.lowlevel.server - INFO - 47962 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 12:31:36,465 - auth.google_auth - INFO - 47962 - MainThread [google_auth.get_authenticated_google_service:741] - [get_ga4_accounts] Attempting to get authenticated analyticsdata service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 12:31:36,468 - auth.google_auth - INFO - 47962 - asyncio_0 [google_auth.load_credentials_from_file:153] - No credentials file found for user david.muleropino@gdcgroup.com at /Users/davidpino/.google_workspace_mcp/credentials/david.muleropino@gdcgroup.com.json
+2025-07-13 12:31:36,469 - auth.google_auth - INFO - 47962 - asyncio_0 [google_auth.get_credentials:615] - [get_credentials] No credentials found for user 'david.muleropino@gdcgroup.com' or session 'None'.
+2025-07-13 12:31:36,469 - auth.google_auth - WARNING - 47962 - MainThread [google_auth.get_authenticated_google_service:760] - [get_ga4_accounts] No valid credentials. Email: 'david.muleropino@gdcgroup.com'.
+2025-07-13 12:31:36,469 - auth.google_auth - INFO - 47962 - MainThread [google_auth.get_authenticated_google_service:763] - [get_ga4_accounts] Valid email 'david.muleropino@gdcgroup.com' provided, initiating auth flow.
+2025-07-13 12:31:36,469 - auth.oauth_callback_server - INFO - 47962 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 12:31:36,469 - auth.google_auth - INFO - 47962 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for Google Analyticsdata for 'david.muleropino@gdcgroup.com' (session: None) with global SCOPES.
+2025-07-13 12:31:36,469 - auth.google_auth - WARNING - 47962 - MainThread [google_auth.start_auth_flow:388] - OAUTHLIB_INSECURE_TRANSPORT not set. Setting it for localhost/local development.
+2025-07-13 12:31:36,470 - auth.google_auth - ERROR - 47962 - MainThread [google_auth.start_auth_flow:446] - OAuth client credentials not found: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set. Please either:
+1. Set environment variables: GOOGLE_OAUTH_CLIENT_ID and GOOGLE_OAUTH_CLIENT_SECRET
+2. Ensure '/Users/davidpino/Documents/github/MCP-GA4/client_secret.json' file exists
+Traceback (most recent call last):
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 400, in start_auth_flow
+    flow = create_oauth_flow(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 329, in create_oauth_flow
+    raise FileNotFoundError(
+FileNotFoundError: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set
+2025-07-13 12:32:40,124 - mcp.server.lowlevel.server - INFO - 47962 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 12:32:40,124 - core.server - INFO - 47962 - MainThread [server.start_google_auth:170] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gdcgroup.com', service: 'ga4', session: 'c6df44091d6e46848958ebcbd09449d7'.
+2025-07-13 12:32:40,124 - auth.oauth_callback_server - INFO - 47962 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 12:32:40,125 - auth.google_auth - INFO - 47962 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for ga4 for 'david.muleropino@gdcgroup.com' (session: c6df44091d6e46848958ebcbd09449d7) with global SCOPES.
+2025-07-13 12:32:40,125 - auth.google_auth - INFO - 47962 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id 'c6df44091d6e46848958ebcbd09449d7' for oauth_state 'eb925b6171c676930a9d4d2585b65598'.
+2025-07-13 12:32:40,125 - auth.google_auth - ERROR - 47962 - MainThread [google_auth.start_auth_flow:446] - OAuth client credentials not found: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set. Please either:
+1. Set environment variables: GOOGLE_OAUTH_CLIENT_ID and GOOGLE_OAUTH_CLIENT_SECRET
+2. Ensure '/Users/davidpino/Documents/github/MCP-GA4/client_secret.json' file exists
+Traceback (most recent call last):
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 400, in start_auth_flow
+    flow = create_oauth_flow(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 329, in create_oauth_flow
+    raise FileNotFoundError(
+FileNotFoundError: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set
+2025-07-13 12:35:44,372 - mcp.server.lowlevel.server - INFO - 47962 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 12:35:44,372 - core.server - INFO - 47962 - MainThread [server.start_google_auth:170] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gdcgroup.com', service: 'ga4', session: 'c6df44091d6e46848958ebcbd09449d7'.
+2025-07-13 12:35:44,372 - auth.oauth_callback_server - INFO - 47962 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 12:35:44,373 - auth.google_auth - INFO - 47962 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for ga4 for 'david.muleropino@gdcgroup.com' (session: c6df44091d6e46848958ebcbd09449d7) with global SCOPES.
+2025-07-13 12:35:44,373 - auth.google_auth - INFO - 47962 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id 'c6df44091d6e46848958ebcbd09449d7' for oauth_state 'cfc1f010d3ed3d80d519c5721546b39c'.
+2025-07-13 12:35:44,373 - auth.google_auth - ERROR - 47962 - MainThread [google_auth.start_auth_flow:446] - OAuth client credentials not found: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set. Please either:
+1. Set environment variables: GOOGLE_OAUTH_CLIENT_ID and GOOGLE_OAUTH_CLIENT_SECRET
+2. Ensure '/Users/davidpino/Documents/github/MCP-GA4/client_secret.json' file exists
+Traceback (most recent call last):
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 400, in start_auth_flow
+    flow = create_oauth_flow(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 329, in create_oauth_flow
+    raise FileNotFoundError(
+FileNotFoundError: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set
+2025-07-13 12:35:47,144 - mcp.server.streamable_http - INFO - 47962 - MainThread [streamable_http._terminate_session:614] - Terminating session: c6df44091d6e46848958ebcbd09449d7
+2025-07-13 12:35:47,149 - mcp.server.streamable_http_manager - INFO - 47962 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 99ac15b850cd4bc881d7cb3e3c11c263
+2025-07-13 12:35:51,132 - mcp.server.lowlevel.server - INFO - 47962 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 12:36:53,205 - mcp.server.lowlevel.server - INFO - 47962 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 12:36:53,205 - core.server - INFO - 47962 - MainThread [server.start_google_auth:170] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gmail.com', service: 'ga4', session: 'd1b18772-2ccc-4ef9-a388-eafc56dfb531'.
+2025-07-13 12:36:53,205 - auth.oauth_callback_server - INFO - 47962 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 12:36:53,205 - auth.google_auth - INFO - 47962 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for ga4 for 'david.muleropino@gmail.com' (session: d1b18772-2ccc-4ef9-a388-eafc56dfb531) with global SCOPES.
+2025-07-13 12:36:53,205 - auth.google_auth - INFO - 47962 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id 'd1b18772-2ccc-4ef9-a388-eafc56dfb531' for oauth_state '3e610c27acf2342d230f53a7bc87d505'.
+2025-07-13 12:36:53,206 - auth.google_auth - ERROR - 47962 - MainThread [google_auth.start_auth_flow:446] - OAuth client credentials not found: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set. Please either:
+1. Set environment variables: GOOGLE_OAUTH_CLIENT_ID and GOOGLE_OAUTH_CLIENT_SECRET
+2. Ensure '/Users/davidpino/Documents/github/MCP-GA4/client_secret.json' file exists
+Traceback (most recent call last):
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 400, in start_auth_flow
+    flow = create_oauth_flow(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 329, in create_oauth_flow
+    raise FileNotFoundError(
+FileNotFoundError: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set
+2025-07-13 12:37:02,629 - mcp.server.streamable_http_manager - INFO - 47962 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 12:37:10,744 - core.utils - INFO - 50693 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 12:37:10,744 - core.server - INFO - 50693 - MainThread [server.set_transport_mode:50] - Transport mode set to: streamable-http
+2025-07-13 12:37:10,755 - mcp.server.streamable_http_manager - INFO - 50693 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 12:37:42,027 - mcp.server.streamable_http_manager - INFO - 50693 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: e6f6da5308ab4a468c91579fd169a623
+2025-07-13 12:37:45,375 - mcp.server.lowlevel.server - INFO - 50693 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 12:38:12,360 - mcp.server.lowlevel.server - INFO - 50693 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 12:38:12,361 - core.server - INFO - 50693 - MainThread [server.start_google_auth:170] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gdcgroup.com', service: 'ga4', session: 'e6f6da5308ab4a468c91579fd169a623'.
+2025-07-13 12:38:12,361 - auth.oauth_callback_server - INFO - 50693 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 12:38:12,361 - auth.google_auth - INFO - 50693 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for ga4 for 'david.muleropino@gdcgroup.com' (session: e6f6da5308ab4a468c91579fd169a623) with global SCOPES.
+2025-07-13 12:38:12,361 - auth.google_auth - WARNING - 50693 - MainThread [google_auth.start_auth_flow:388] - OAUTHLIB_INSECURE_TRANSPORT not set. Setting it for localhost/local development.
+2025-07-13 12:38:12,361 - auth.google_auth - INFO - 50693 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id 'e6f6da5308ab4a468c91579fd169a623' for oauth_state '1dbbed2cc71cf150ba87a27de555781b'.
+2025-07-13 12:38:12,361 - auth.google_auth - ERROR - 50693 - MainThread [google_auth.start_auth_flow:446] - OAuth client credentials not found: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set. Please either:
+1. Set environment variables: GOOGLE_OAUTH_CLIENT_ID and GOOGLE_OAUTH_CLIENT_SECRET
+2. Ensure '/Users/davidpino/Documents/github/MCP-GA4/client_secret.json' file exists
+Traceback (most recent call last):
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 400, in start_auth_flow
+    flow = create_oauth_flow(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 329, in create_oauth_flow
+    raise FileNotFoundError(
+FileNotFoundError: OAuth client secrets file not found at /Users/davidpino/Documents/github/MCP-GA4/client_secret.json and no environment variables set
+2025-07-13 12:48:36,072 - mcp.server.lowlevel.server - INFO - 50693 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 12:48:36,072 - core.server - INFO - 50693 - MainThread [server.start_google_auth:170] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gdcgroup.com', service: 'ga4', session: 'e6f6da5308ab4a468c91579fd169a623'.
+2025-07-13 12:48:36,072 - auth.oauth_callback_server - INFO - 50693 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 12:48:36,073 - auth.google_auth - INFO - 50693 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for ga4 for 'david.muleropino@gdcgroup.com' (session: e6f6da5308ab4a468c91579fd169a623) with global SCOPES.
+2025-07-13 12:48:36,073 - auth.google_auth - INFO - 50693 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id 'e6f6da5308ab4a468c91579fd169a623' for oauth_state '4aa5e8109943c5ecc3e3a2cec2503325'.
+2025-07-13 12:48:36,075 - auth.google_auth - INFO - 50693 - MainThread [google_auth.start_auth_flow:407] - Auth flow started for ga4 for 'david.muleropino@gdcgroup.com'. State: 4aa5e8109943c5ecc3e3a2cec2503325. Advise user to visit: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=149789248234-fivpclt8d8k6ucuhmcof4gjt9lo4jcre.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Foauth2callback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.provision+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.edit+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users.deletion+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&state=4aa5e8109943c5ecc3e3a2cec2503325&access_type=offline&prompt=consent
+2025-07-13 13:00:58,124 - mcp.server.streamable_http_manager - INFO - 50693 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 13:01:02,174 - core.utils - INFO - 57792 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 13:01:02,174 - core.server - INFO - 57792 - MainThread [server.set_transport_mode:50] - Transport mode set to: streamable-http
+2025-07-13 13:01:02,184 - mcp.server.streamable_http_manager - INFO - 57792 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 13:01:22,403 - mcp.server.streamable_http_manager - INFO - 57792 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: dc7feb883a364a519546801fdc332081
+2025-07-13 13:01:24,033 - mcp.server.streamable_http - INFO - 57792 - MainThread [streamable_http._terminate_session:614] - Terminating session: dc7feb883a364a519546801fdc332081
+2025-07-13 13:01:24,040 - mcp.server.streamable_http_manager - INFO - 57792 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 754e1be87f23467da8518683af817273
+2025-07-13 13:01:28,497 - mcp.server.streamable_http - INFO - 57792 - MainThread [streamable_http._terminate_session:614] - Terminating session: 754e1be87f23467da8518683af817273
+2025-07-13 13:01:37,868 - mcp.server.streamable_http_manager - INFO - 57792 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 13:01:40,615 - core.utils - INFO - 57991 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 13:01:40,615 - core.server - INFO - 57991 - MainThread [server.set_transport_mode:50] - Transport mode set to: streamable-http
+2025-07-13 13:01:40,624 - mcp.server.streamable_http_manager - INFO - 57991 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 13:01:52,802 - mcp.server.streamable_http_manager - INFO - 57991 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: fb5e6001a1f3406db1f578884579dc4f
+2025-07-13 13:02:11,638 - mcp.server.lowlevel.server - INFO - 57991 - MainThread [server._handle_request:523] - Processing request of type ListResourcesRequest
+2025-07-13 13:02:12,699 - mcp.server.lowlevel.server - INFO - 57991 - MainThread [server._handle_request:523] - Processing request of type ListResourceTemplatesRequest
+2025-07-13 13:02:16,076 - mcp.server.lowlevel.server - INFO - 57991 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 13:02:37,653 - mcp.server.lowlevel.server - INFO - 57991 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:02:37,654 - core.server - INFO - 57991 - MainThread [server.start_google_auth:170] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gdcgroup.com', service: 'ga4', session: '16e84c8b-52d3-4847-8bb6-4573341c6350'.
+2025-07-13 13:02:37,654 - auth.oauth_callback_server - INFO - 57991 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 13:02:37,654 - auth.google_auth - INFO - 57991 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for Google Analytics 4 for 'david.muleropino@gdcgroup.com' (session: 16e84c8b-52d3-4847-8bb6-4573341c6350) with global SCOPES.
+2025-07-13 13:02:37,654 - auth.google_auth - WARNING - 57991 - MainThread [google_auth.start_auth_flow:388] - OAUTHLIB_INSECURE_TRANSPORT not set. Setting it for localhost/local development.
+2025-07-13 13:02:37,654 - auth.google_auth - INFO - 57991 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id '16e84c8b-52d3-4847-8bb6-4573341c6350' for oauth_state '413c29fb2d367364bf1c8c0fd14e9741'.
+2025-07-13 13:02:37,657 - auth.google_auth - INFO - 57991 - MainThread [google_auth.start_auth_flow:407] - Auth flow started for Google Analytics 4 for 'david.muleropino@gdcgroup.com'. State: 413c29fb2d367364bf1c8c0fd14e9741. Advise user to visit: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=149789248234-fivpclt8d8k6ucuhmcof4gjt9lo4jcre.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Foauth2callback&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users.deletion+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.edit+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.provision+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&state=413c29fb2d367364bf1c8c0fd14e9741&access_type=offline&prompt=consent
+2025-07-13 13:06:04,156 - mcp.server.streamable_http_manager - INFO - 57991 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 13:06:06,705 - core.utils - INFO - 59639 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 13:06:06,705 - core.server - INFO - 59639 - MainThread [server.set_transport_mode:50] - Transport mode set to: streamable-http
+2025-07-13 13:06:06,716 - mcp.server.streamable_http_manager - INFO - 59639 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 13:06:42,900 - mcp.server.streamable_http_manager - INFO - 59639 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 7b58a15446f445b79cc45b30b475781e
+2025-07-13 13:06:50,339 - mcp.server.lowlevel.server - INFO - 59639 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 13:07:08,212 - mcp.server.lowlevel.server - INFO - 59639 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:07:08,214 - core.server - INFO - 59639 - MainThread [server.start_google_auth:170] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gdcgroup.com', service: 'ga4', session: '7b58a15446f445b79cc45b30b475781e'.
+2025-07-13 13:07:08,214 - auth.oauth_callback_server - INFO - 59639 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 13:07:08,214 - auth.google_auth - INFO - 59639 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for Google Analytics 4 for 'david.muleropino@gdcgroup.com' (session: 7b58a15446f445b79cc45b30b475781e) with global SCOPES.
+2025-07-13 13:07:08,214 - auth.google_auth - WARNING - 59639 - MainThread [google_auth.start_auth_flow:388] - OAUTHLIB_INSECURE_TRANSPORT not set. Setting it for localhost/local development.
+2025-07-13 13:07:08,214 - auth.google_auth - INFO - 59639 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id '7b58a15446f445b79cc45b30b475781e' for oauth_state '51157af0029dcba52a430625d6e7ed00'.
+2025-07-13 13:07:08,216 - auth.google_auth - INFO - 59639 - MainThread [google_auth.start_auth_flow:407] - Auth flow started for Google Analytics 4 for 'david.muleropino@gdcgroup.com'. State: 51157af0029dcba52a430625d6e7ed00. Advise user to visit: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=149789248234-fivpclt8d8k6ucuhmcof4gjt9lo4jcre.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Foauth2callback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.provision+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.edit+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users.readonly&state=51157af0029dcba52a430625d6e7ed00&access_type=offline&prompt=consent
+2025-07-13 13:07:48,422 - core.server - INFO - 59639 - MainThread [server.oauth2_callback:100] - OAuth callback: Received code (state: 51157af0029dcba52a430625d6e7ed00). Attempting to exchange for tokens.
+2025-07-13 13:07:48,422 - core.server - INFO - 59639 - MainThread [server.oauth2_callback:104] - OAuth callback: Retrieved MCP session ID '7b58a15446f445b79cc45b30b475781e' for state '51157af0029dcba52a430625d6e7ed00'.
+2025-07-13 13:07:48,423 - auth.oauth_callback_server - INFO - 59639 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 13:07:48,812 - auth.google_auth - ERROR - 59639 - MainThread [google_auth.handle_auth_callback:529] - Error handling auth callback: Scope has changed from "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/analytics.provision openid https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.manage.users https://www.googleapis.com/auth/analytics.manage.users.readonly" to "https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.manage.users https://www.googleapis.com/auth/analytics.manage.users.readonly".
+2025-07-13 13:07:48,812 - core.server - ERROR - 59639 - MainThread [server.oauth2_callback:125] - Error processing OAuth callback (state: 51157af0029dcba52a430625d6e7ed00): Scope has changed from "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/analytics.provision openid https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.manage.users https://www.googleapis.com/auth/analytics.manage.users.readonly" to "https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.manage.users https://www.googleapis.com/auth/analytics.manage.users.readonly".
+Traceback (most recent call last):
+  File "/Users/davidpino/Documents/github/MCP-GA4/core/server.py", line 110, in oauth2_callback
+    verified_user_id, credentials = handle_auth_callback(
+                                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidpino/Documents/github/MCP-GA4/auth/google_auth.py", line 506, in handle_auth_callback
+    flow.fetch_token(authorization_response=authorization_response)
+  File "/Users/davidpino/Documents/github/MCP-GA4/.venv/lib/python3.12/site-packages/google_auth_oauthlib/flow.py", line 285, in fetch_token
+    return self.oauth2session.fetch_token(self.client_config["token_uri"], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidpino/Documents/github/MCP-GA4/.venv/lib/python3.12/site-packages/requests_oauthlib/oauth2_session.py", line 406, in fetch_token
+    self._client.parse_request_body_response(r.text, scope=self.scope)
+  File "/Users/davidpino/Documents/github/MCP-GA4/.venv/lib/python3.12/site-packages/oauthlib/oauth2/rfc6749/clients/base.py", line 426, in parse_request_body_response
+    self.token = parse_token_response(body, scope=scope)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/davidpino/Documents/github/MCP-GA4/.venv/lib/python3.12/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 444, in parse_token_response
+    validate_token_parameters(params)
+  File "/Users/davidpino/Documents/github/MCP-GA4/.venv/lib/python3.12/site-packages/oauthlib/oauth2/rfc6749/parameters.py", line 473, in validate_token_parameters
+    raise w
+Warning: Scope has changed from "https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/analytics.provision openid https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.manage.users https://www.googleapis.com/auth/analytics.manage.users.readonly" to "https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/userinfo.email openid https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.manage.users https://www.googleapis.com/auth/analytics.manage.users.readonly".
+2025-07-13 13:08:46,670 - mcp.server.streamable_http_manager - INFO - 59639 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 13:08:53,178 - core.utils - INFO - 60634 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 13:08:53,178 - core.server - INFO - 60634 - MainThread [server.set_transport_mode:50] - Transport mode set to: streamable-http
+2025-07-13 13:08:53,189 - mcp.server.streamable_http_manager - INFO - 60634 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 13:09:14,664 - mcp.server.streamable_http_manager - INFO - 60634 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 286c9e8c516b4bd1acf31d2ad752cc82
+2025-07-13 13:09:17,648 - mcp.server.lowlevel.server - INFO - 60634 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 13:09:24,884 - mcp.server.lowlevel.server - INFO - 60634 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 13:10:01,536 - mcp.server.lowlevel.server - INFO - 60634 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:10:01,536 - auth.google_auth - INFO - 60634 - MainThread [google_auth.get_authenticated_google_service:741] - [get_ga4_accounts] Attempting to get authenticated analyticsdata service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 13:10:01,540 - auth.google_auth - INFO - 60634 - asyncio_0 [google_auth.load_credentials_from_file:153] - No credentials file found for user david.muleropino@gdcgroup.com at /Users/davidpino/.google_workspace_mcp/credentials/david.muleropino@gdcgroup.com.json
+2025-07-13 13:10:01,540 - auth.google_auth - INFO - 60634 - asyncio_0 [google_auth.get_credentials:615] - [get_credentials] No credentials found for user 'david.muleropino@gdcgroup.com' or session 'None'.
+2025-07-13 13:10:01,540 - auth.google_auth - WARNING - 60634 - MainThread [google_auth.get_authenticated_google_service:760] - [get_ga4_accounts] No valid credentials. Email: 'david.muleropino@gdcgroup.com'.
+2025-07-13 13:10:01,540 - auth.google_auth - INFO - 60634 - MainThread [google_auth.get_authenticated_google_service:763] - [get_ga4_accounts] Valid email 'david.muleropino@gdcgroup.com' provided, initiating auth flow.
+2025-07-13 13:10:01,541 - auth.oauth_callback_server - INFO - 60634 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 13:10:01,541 - auth.google_auth - INFO - 60634 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for Google Analyticsdata for 'david.muleropino@gdcgroup.com' (session: None) with global SCOPES.
+2025-07-13 13:10:01,541 - auth.google_auth - WARNING - 60634 - MainThread [google_auth.start_auth_flow:388] - OAUTHLIB_INSECURE_TRANSPORT not set. Setting it for localhost/local development.
+2025-07-13 13:10:01,542 - auth.google_auth - INFO - 60634 - MainThread [google_auth.start_auth_flow:407] - Auth flow started for Google Analyticsdata for 'david.muleropino@gdcgroup.com'. State: 18fbb1a997c6c8982dabb503fc3d41de. Advise user to visit: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=149789248234-fivpclt8d8k6ucuhmcof4gjt9lo4jcre.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Foauth2callback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.provision+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users.readonly+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.edit+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.readonly&state=18fbb1a997c6c8982dabb503fc3d41de&access_type=offline&prompt=consent
+2025-07-13 13:10:43,186 - core.server - INFO - 60634 - MainThread [server.oauth2_callback:100] - OAuth callback: Received code (state: 18fbb1a997c6c8982dabb503fc3d41de). Attempting to exchange for tokens.
+2025-07-13 13:10:43,187 - core.server - WARNING - 60634 - MainThread [server.oauth2_callback:106] - OAuth callback: No MCP session ID found for state '18fbb1a997c6c8982dabb503fc3d41de'. Auth will not be tied to a specific session directly via this callback.
+2025-07-13 13:10:43,187 - auth.oauth_callback_server - INFO - 60634 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 13:10:43,663 - auth.google_auth - INFO - 60634 - MainThread [google_auth.handle_auth_callback:508] - Successfully exchanged authorization code for tokens.
+2025-07-13 13:10:43,676 - googleapiclient.discovery_cache - INFO - 60634 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 13:10:43,927 - auth.google_auth - INFO - 60634 - MainThread [google_auth.get_user_info:695] - Successfully fetched user info: david.muleropino@gdcgroup.com
+2025-07-13 13:10:43,927 - auth.google_auth - INFO - 60634 - MainThread [google_auth.handle_auth_callback:517] - Identified user_google_email: david.muleropino@gdcgroup.com
+2025-07-13 13:10:43,927 - auth.google_auth - INFO - 60634 - MainThread [google_auth.save_credentials_to_file:133] - Credentials saved for user david.muleropino@gdcgroup.com to /Users/davidpino/.google_workspace_mcp/credentials/david.muleropino@gdcgroup.com.json
+2025-07-13 13:10:43,928 - core.server - INFO - 60634 - MainThread [server.oauth2_callback:118] - OAuth callback: Successfully authenticated user: david.muleropino@gdcgroup.com (state: 18fbb1a997c6c8982dabb503fc3d41de).
+2025-07-13 13:10:55,552 - mcp.server.lowlevel.server - INFO - 60634 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:10:55,552 - auth.google_auth - INFO - 60634 - MainThread [google_auth.get_authenticated_google_service:741] - [get_ga4_accounts] Attempting to get authenticated analyticsdata service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 13:10:55,554 - googleapiclient.discovery_cache - INFO - 60634 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 13:10:55,557 - auth.google_auth - INFO - 60634 - MainThread [google_auth.get_authenticated_google_service:803] - [get_ga4_accounts] Successfully authenticated analyticsdata service for user: david.muleropino@gdcgroup.com
+2025-07-13 13:10:55,557 - ga4.ga4_tools - INFO - 60634 - MainThread [ga4_tools.get_ga4_accounts:129] - [get_ga4_accounts] Getting accounts for user: david.muleropino@gdcgroup.com
+2025-07-13 13:10:55,557 - ga4.ga4_tools - ERROR - 60634 - MainThread [ga4_tools.get_ga4_accounts:160] - [get_ga4_accounts] Error: 'Resource' object has no attribute 'accounts'
+2025-07-13 13:33:37,655 - mcp.server.streamable_http_manager - INFO - 60634 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 13:33:41,005 - core.utils - INFO - 67904 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 13:33:41,005 - core.server - INFO - 67904 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 13:33:41,015 - mcp.server.streamable_http_manager - INFO - 67904 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 13:35:38,120 - mcp.server.streamable_http_manager - INFO - 67904 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 8ef77e20977341fcb24b7395a046e381
+2025-07-13 13:35:40,900 - mcp.server.lowlevel.server - INFO - 67904 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 13:36:17,261 - mcp.server.lowlevel.server - INFO - 67904 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:36:17,262 - core.server - INFO - 67904 - MainThread [server.start_google_auth:174] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gdcgroup.com', service: 'ga4', session: 'b77bc268-98d5-479d-9fef-7a9460356c1a'.
+2025-07-13 13:36:17,262 - auth.oauth_callback_server - INFO - 67904 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 13:36:17,262 - auth.google_auth - INFO - 67904 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for Google Analytics 4 for 'david.muleropino@gdcgroup.com' (session: b77bc268-98d5-479d-9fef-7a9460356c1a) with global SCOPES.
+2025-07-13 13:36:17,262 - auth.google_auth - WARNING - 67904 - MainThread [google_auth.start_auth_flow:388] - OAUTHLIB_INSECURE_TRANSPORT not set. Setting it for localhost/local development.
+2025-07-13 13:36:17,262 - auth.google_auth - INFO - 67904 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id 'b77bc268-98d5-479d-9fef-7a9460356c1a' for oauth_state '8945f3eba76ceda24bcc6234b4817cb9'.
+2025-07-13 13:36:17,265 - auth.google_auth - INFO - 67904 - MainThread [google_auth.start_auth_flow:407] - Auth flow started for Google Analytics 4 for 'david.muleropino@gdcgroup.com'. State: 8945f3eba76ceda24bcc6234b4817cb9. Advise user to visit: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=149789248234-fivpclt8d8k6ucuhmcof4gjt9lo4jcre.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Foauth2callback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.provision+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.edit+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users.readonly&state=8945f3eba76ceda24bcc6234b4817cb9&access_type=offline&prompt=consent
+2025-07-13 13:36:42,038 - core.server - INFO - 67904 - MainThread [server.oauth2_callback:104] - OAuth callback: Received code (state: 8945f3eba76ceda24bcc6234b4817cb9). Attempting to exchange for tokens.
+2025-07-13 13:36:42,039 - core.server - INFO - 67904 - MainThread [server.oauth2_callback:108] - OAuth callback: Retrieved MCP session ID 'b77bc268-98d5-479d-9fef-7a9460356c1a' for state '8945f3eba76ceda24bcc6234b4817cb9'.
+2025-07-13 13:36:42,039 - auth.oauth_callback_server - INFO - 67904 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 13:36:42,428 - auth.google_auth - INFO - 67904 - MainThread [google_auth.handle_auth_callback:508] - Successfully exchanged authorization code for tokens.
+2025-07-13 13:36:42,436 - googleapiclient.discovery_cache - INFO - 67904 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 13:36:42,723 - auth.google_auth - INFO - 67904 - MainThread [google_auth.get_user_info:695] - Successfully fetched user info: david.muleropino@gdcgroup.com
+2025-07-13 13:36:42,724 - auth.google_auth - INFO - 67904 - MainThread [google_auth.handle_auth_callback:517] - Identified user_google_email: david.muleropino@gdcgroup.com
+2025-07-13 13:36:42,726 - auth.google_auth - INFO - 67904 - MainThread [google_auth.save_credentials_to_file:133] - Credentials saved for user david.muleropino@gdcgroup.com to /Users/davidpino/.google_workspace_mcp/credentials/david.muleropino@gdcgroup.com.json
+2025-07-13 13:36:42,727 - core.server - INFO - 67904 - MainThread [server.oauth2_callback:122] - OAuth callback: Successfully authenticated user: david.muleropino@gdcgroup.com (state: 8945f3eba76ceda24bcc6234b4817cb9) (linked to session: b77bc268-98d5-479d-9fef-7a9460356c1a).
+2025-07-13 13:37:06,248 - mcp.server.lowlevel.server - INFO - 67904 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:37:06,249 - auth.google_auth - INFO - 67904 - MainThread [google_auth.get_authenticated_google_service:741] - [get_ga4_accounts] Attempting to get authenticated analyticsdata service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 13:37:06,252 - googleapiclient.discovery_cache - INFO - 67904 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 13:37:06,255 - auth.google_auth - INFO - 67904 - MainThread [google_auth.get_authenticated_google_service:803] - [get_ga4_accounts] Successfully authenticated analyticsdata service for user: david.muleropino@gdcgroup.com
+2025-07-13 13:37:06,255 - ga4.ga4_tools - INFO - 67904 - MainThread [ga4_tools.get_ga4_accounts:129] - [get_ga4_accounts] Getting accounts for user: david.muleropino@gdcgroup.com
+2025-07-13 13:37:06,255 - ga4.ga4_tools - ERROR - 67904 - MainThread [ga4_tools.get_ga4_accounts:160] - [get_ga4_accounts] Error: 'Resource' object has no attribute 'accounts'
+2025-07-13 13:49:08,045 - mcp.server.streamable_http_manager - INFO - 67904 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 13:49:11,642 - core.utils - INFO - 73350 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 13:49:11,642 - core.server - INFO - 73350 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 13:49:11,654 - mcp.server.streamable_http_manager - INFO - 73350 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 13:50:18,160 - mcp.server.streamable_http_manager - INFO - 73350 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: ad19c5f581b04cbeb32e27be6d2eb9fc
+2025-07-13 13:50:20,670 - mcp.server.lowlevel.server - INFO - 73350 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 13:50:51,663 - mcp.server.lowlevel.server - INFO - 73350 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:50:51,664 - core.server - INFO - 73350 - MainThread [server.start_google_auth:174] - Tool 'start_google_auth' invoked for user_google_email: 'david.muleropino@gdcgroup.com', service: 'ga4_data', session: 'bac632bd-df84-4289-b071-8b6368a4f043'.
+2025-07-13 13:50:51,664 - auth.oauth_callback_server - INFO - 73350 - MainThread [oauth_callback_server.get_oauth_redirect_uri:207] - Constructed redirect URI: http://localhost:8000/oauth2callback
+2025-07-13 13:50:51,664 - auth.google_auth - INFO - 73350 - MainThread [google_auth.start_auth_flow:380] - [start_auth_flow] Initiating auth for ga4_data for 'david.muleropino@gdcgroup.com' (session: bac632bd-df84-4289-b071-8b6368a4f043) with global SCOPES.
+2025-07-13 13:50:51,664 - auth.google_auth - WARNING - 73350 - MainThread [google_auth.start_auth_flow:388] - OAUTHLIB_INSECURE_TRANSPORT not set. Setting it for localhost/local development.
+2025-07-13 13:50:51,665 - auth.google_auth - INFO - 73350 - MainThread [google_auth.start_auth_flow:396] - [start_auth_flow] Stored mcp_session_id 'bac632bd-df84-4289-b071-8b6368a4f043' for oauth_state '5b8624ff93245270196c5ba4986e1627'.
+2025-07-13 13:50:51,667 - auth.google_auth - INFO - 73350 - MainThread [google_auth.start_auth_flow:407] - Auth flow started for ga4_data for 'david.muleropino@gdcgroup.com'. State: 5b8624ff93245270196c5ba4986e1627. Advise user to visit: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=149789248234-fivpclt8d8k6ucuhmcof4gjt9lo4jcre.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Foauth2callback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.readonly+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.provision+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users.readonly+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.edit+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fanalytics.manage.users&state=5b8624ff93245270196c5ba4986e1627&access_type=offline&prompt=consent
+2025-07-13 13:51:13,589 - mcp.server.lowlevel.server - INFO - 73350 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:51:13,589 - auth.google_auth - INFO - 73350 - MainThread [google_auth.get_authenticated_google_service:741] - [get_ga4_accounts] Attempting to get authenticated analyticsdata service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 13:51:13,598 - googleapiclient.discovery_cache - INFO - 73350 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 13:51:13,600 - auth.google_auth - INFO - 73350 - MainThread [google_auth.get_authenticated_google_service:803] - [get_ga4_accounts] Successfully authenticated analyticsdata service for user: david.muleropino@gdcgroup.com
+2025-07-13 13:51:13,600 - ga4.ga4_tools - INFO - 73350 - MainThread [ga4_tools.get_ga4_accounts:129] - [get_ga4_accounts] Getting accounts for user: david.muleropino@gdcgroup.com
+2025-07-13 13:51:13,600 - ga4.ga4_tools - ERROR - 73350 - MainThread [ga4_tools.get_ga4_accounts:160] - [get_ga4_accounts] Error: 'Resource' object has no attribute 'accounts'
+2025-07-13 13:53:43,382 - mcp.server.streamable_http_manager - INFO - 73350 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 13:53:46,275 - core.utils - INFO - 75027 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 13:53:46,276 - core.server - INFO - 75027 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 13:53:46,289 - mcp.server.streamable_http_manager - INFO - 75027 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 13:54:03,760 - mcp.server.streamable_http_manager - INFO - 75027 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 65b74961e224411d90fcbfa48cb4f551
+2025-07-13 13:54:07,003 - mcp.server.lowlevel.server - INFO - 75027 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 13:54:19,347 - mcp.server.lowlevel.server - INFO - 75027 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:54:19,348 - auth.google_auth - INFO - 75027 - MainThread [google_auth.get_authenticated_google_service:741] - [get_ga4_accounts] Attempting to get authenticated analyticsadmin service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 13:54:19,355 - googleapiclient.discovery_cache - INFO - 75027 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 13:54:19,358 - auth.google_auth - INFO - 75027 - MainThread [google_auth.get_authenticated_google_service:803] - [get_ga4_accounts] Successfully authenticated analyticsadmin service for user: david.muleropino@gdcgroup.com
+2025-07-13 13:54:19,358 - ga4.ga4_tools - INFO - 75027 - MainThread [ga4_tools.get_ga4_accounts:129] - [get_ga4_accounts] Getting accounts for user: david.muleropino@gdcgroup.com
+2025-07-13 13:55:44,356 - mcp.server.lowlevel.server - INFO - 75027 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:55:44,357 - auth.google_auth - INFO - 75027 - MainThread [google_auth.get_authenticated_google_service:741] - [get_ga4_properties] Attempting to get authenticated analyticsdata service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 13:55:44,360 - googleapiclient.discovery_cache - INFO - 75027 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 13:55:44,361 - auth.google_auth - INFO - 75027 - MainThread [google_auth.get_authenticated_google_service:803] - [get_ga4_properties] Successfully authenticated analyticsdata service for user: david.muleropino@gdcgroup.com
+2025-07-13 13:55:44,361 - ga4.ga4_tools - INFO - 75027 - MainThread [ga4_tools.get_ga4_properties:182] - [get_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 13:55:44,365 - ga4.ga4_tools - ERROR - 75027 - MainThread [ga4_tools.get_ga4_properties:222] - [get_ga4_properties] Error: 'Resource' object has no attribute 'list'
+2025-07-13 13:56:36,271 - mcp.server.streamable_http_manager - INFO - 75027 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 13:56:58,860 - core.utils - INFO - 76382 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 13:56:58,860 - core.server - INFO - 76382 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 13:56:58,871 - mcp.server.streamable_http_manager - INFO - 76382 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 13:57:09,583 - mcp.server.streamable_http_manager - INFO - 76382 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 5a04048130824cd1a3ab2f3233adfc4f
+2025-07-13 13:57:12,591 - mcp.server.lowlevel.server - INFO - 76382 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 13:58:07,802 - mcp.server.lowlevel.server - INFO - 76382 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:58:15,975 - mcp.server.lowlevel.server - INFO - 76382 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:58:15,976 - auth.google_auth - INFO - 76382 - MainThread [google_auth.get_authenticated_google_service:741] - [get_ga4_properties] Attempting to get authenticated analyticsadmin service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 13:58:15,984 - googleapiclient.discovery_cache - INFO - 76382 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 13:58:15,987 - auth.google_auth - INFO - 76382 - MainThread [google_auth.get_authenticated_google_service:803] - [get_ga4_properties] Successfully authenticated analyticsadmin service for user: david.muleropino@gdcgroup.com
+2025-07-13 13:58:15,987 - ga4.ga4_tools - INFO - 76382 - MainThread [ga4_tools.get_ga4_properties:182] - [get_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 13:58:15,990 - ga4.ga4_tools - ERROR - 76382 - MainThread [ga4_tools.get_ga4_properties:222] - [get_ga4_properties] Error: 'HttpRequest' object has no attribute 'filter'
+2025-07-13 13:59:38,201 - mcp.server.lowlevel.server - INFO - 76382 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 13:59:38,202 - ga4.ga4_tools - INFO - 76382 - MainThread [ga4_tools.get_ga4_properties:182] - [get_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 13:59:38,204 - ga4.ga4_tools - ERROR - 76382 - MainThread [ga4_tools.get_ga4_properties:222] - [get_ga4_properties] Error: 'HttpRequest' object has no attribute 'filter'
+2025-07-13 14:00:25,423 - mcp.server.lowlevel.server - INFO - 76382 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 14:00:25,424 - ga4.ga4_tools - INFO - 76382 - MainThread [ga4_tools.get_ga4_properties:182] - [get_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 14:00:25,425 - ga4.ga4_tools - ERROR - 76382 - MainThread [ga4_tools.get_ga4_properties:222] - [get_ga4_properties] Error: 'HttpRequest' object has no attribute 'filter'
+2025-07-13 14:00:32,254 - mcp.server.lowlevel.server - INFO - 76382 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 14:00:32,255 - ga4.ga4_tools - INFO - 76382 - MainThread [ga4_tools.get_ga4_properties:182] - [get_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 14:00:32,257 - ga4.ga4_tools - ERROR - 76382 - MainThread [ga4_tools.get_ga4_properties:222] - [get_ga4_properties] Error: 'HttpRequest' object has no attribute 'filter'
+2025-07-13 14:07:27,403 - mcp.server.streamable_http_manager - INFO - 76382 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 14:07:30,987 - core.utils - INFO - 79897 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 14:07:30,987 - core.server - INFO - 79897 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 14:07:30,998 - mcp.server.streamable_http_manager - INFO - 79897 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 14:09:02,685 - mcp.server.streamable_http_manager - INFO - 79897 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 46f8d94fd86940bca0f84d193d7dcd7b
+2025-07-13 14:09:05,770 - mcp.server.lowlevel.server - INFO - 79897 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 14:09:31,476 - mcp.server.lowlevel.server - INFO - 79897 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 14:09:31,477 - auth.google_auth - INFO - 79897 - MainThread [google_auth.get_authenticated_google_service:741] - [list_ga4_properties] Attempting to get authenticated analyticsadmin service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 14:09:31,484 - googleapiclient.discovery_cache - INFO - 79897 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 14:09:31,487 - auth.google_auth - INFO - 79897 - MainThread [google_auth.get_authenticated_google_service:803] - [list_ga4_properties] Successfully authenticated analyticsadmin service for user: david.muleropino@gdcgroup.com
+2025-07-13 14:09:31,487 - ga4.ga4_tools - INFO - 79897 - MainThread [ga4_tools.list_ga4_properties:182] - [list_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 14:20:18,375 - mcp.server.streamable_http_manager - INFO - 79897 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 14:20:21,446 - core.utils - INFO - 83780 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 14:20:21,446 - core.server - INFO - 83780 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 14:20:21,457 - mcp.server.streamable_http_manager - INFO - 83780 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 14:20:35,533 - mcp.server.streamable_http_manager - INFO - 83780 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 4dedf972c1a4416f9e75bd2442b81568
+2025-07-13 14:20:38,262 - mcp.server.lowlevel.server - INFO - 83780 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 14:21:28,908 - mcp.server.lowlevel.server - INFO - 83780 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 14:21:28,909 - auth.google_auth - INFO - 83780 - MainThread [google_auth.get_authenticated_google_service:741] - [list_ga4_properties] Attempting to get authenticated analyticsadmin service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 14:21:28,918 - googleapiclient.discovery_cache - INFO - 83780 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 14:21:28,920 - auth.google_auth - INFO - 83780 - MainThread [google_auth.get_authenticated_google_service:803] - [list_ga4_properties] Successfully authenticated analyticsadmin service for user: david.muleropino@gdcgroup.com
+2025-07-13 14:21:28,920 - ga4.ga4_tools - INFO - 83780 - MainThread [ga4_tools.list_ga4_properties:186] - [list_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 14:21:28,920 - ga4.ga4_tools - INFO - 83780 - MainThread [ga4_tools.list_ga4_properties:200] - [list_ga4_properties] Fetching with filter: parent:accounts/27866493
+2025-07-13 14:21:30,045 - ga4.ga4_tools - INFO - 83780 - MainThread [ga4_tools.list_ga4_properties:211] - [list_ga4_properties] Fetching with filter: parent:properties/
+2025-07-13 14:21:30,264 - ga4.ga4_tools - ERROR - 83780 - MainThread [ga4_tools.list_ga4_properties:263] - [list_ga4_properties] Error: <HttpError 400 when requesting https://analyticsadmin.googleapis.com/v1beta/properties?filter=parent%3Aproperties%2F&alt=json returned "The value for the 'filter' field was invalid but must be in format ''parent:accounts/123', 'parent:properties/123', 'ancestor:accounts/123' or 'firebase_project:123''.". Details: "The value for the 'filter' field was invalid but must be in format ''parent:accounts/123', 'parent:properties/123', 'ancestor:accounts/123' or 'firebase_project:123''.">
+2025-07-13 14:25:15,828 - mcp.server.streamable_http_manager - INFO - 83780 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 14:25:19,919 - core.utils - INFO - 85414 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 14:25:19,919 - core.server - INFO - 85414 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 14:25:19,931 - mcp.server.streamable_http_manager - INFO - 85414 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 14:25:51,964 - mcp.server.streamable_http_manager - INFO - 85414 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 1005d07ffa56447e93f6141fa62c3de2
+2025-07-13 14:25:54,805 - mcp.server.lowlevel.server - INFO - 85414 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 14:26:19,454 - mcp.server.lowlevel.server - INFO - 85414 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 14:47:57,908 - mcp.server.streamable_http_manager - INFO - 85414 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 14:48:00,377 - core.utils - INFO - 92852 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 14:48:00,377 - core.server - INFO - 92852 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 14:48:00,388 - mcp.server.streamable_http_manager - INFO - 92852 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 14:48:27,488 - mcp.server.streamable_http_manager - INFO - 92852 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 1db43951c01944f196ee0b96b8959bc1
+2025-07-13 14:48:30,170 - mcp.server.lowlevel.server - INFO - 92852 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 14:49:14,051 - mcp.server.lowlevel.server - INFO - 92852 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 14:49:14,053 - auth.google_auth - INFO - 92852 - MainThread [google_auth.get_authenticated_google_service:741] - [list_ga4_properties] Attempting to get authenticated analyticsadmin service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 14:49:14,057 - auth.google_auth - INFO - 92852 - asyncio_0 [google_auth.get_credentials:640] - [get_credentials] Credentials expired. Attempting refresh. User: 'david.muleropino@gdcgroup.com', Session: 'None'
+2025-07-13 14:49:14,528 - auth.google_auth - INFO - 92852 - asyncio_0 [google_auth.get_credentials:654] - [get_credentials] Credentials refreshed successfully. User: 'david.muleropino@gdcgroup.com', Session: 'None'
+2025-07-13 14:49:14,530 - auth.google_auth - INFO - 92852 - asyncio_0 [google_auth.save_credentials_to_file:133] - Credentials saved for user david.muleropino@gdcgroup.com to /Users/davidpino/.google_workspace_mcp/credentials/david.muleropino@gdcgroup.com.json
+2025-07-13 14:49:14,537 - googleapiclient.discovery_cache - INFO - 92852 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 14:49:14,540 - auth.google_auth - INFO - 92852 - MainThread [google_auth.get_authenticated_google_service:799] - [list_ga4_properties] Token email: david.muleropino@gdcgroup.com
+2025-07-13 14:49:14,541 - auth.google_auth - INFO - 92852 - MainThread [google_auth.get_authenticated_google_service:803] - [list_ga4_properties] Successfully authenticated analyticsadmin service for user: david.muleropino@gdcgroup.com
+2025-07-13 14:49:14,541 - ga4.ga4_tools - INFO - 92852 - MainThread [ga4_tools.list_ga4_properties:185] - [list_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 14:49:14,541 - ga4.ga4_tools - INFO - 92852 - MainThread [ga4_tools.list_ga4_properties:195] - [list_ga4_properties] Fetching with filter: parent:accounts/27866493
+2025-07-13 14:49:15,070 - ga4.ga4_tools - INFO - 92852 - MainThread [ga4_tools.list_ga4_properties:212] - [list_ga4_properties] Fetching sub-properties with filter: parent:properties/27866493
+2025-07-13 14:57:16,241 - mcp.server.streamable_http_manager - INFO - 92852 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 14:57:37,225 - core.utils - INFO - 95811 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 14:57:37,225 - core.server - INFO - 95811 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 14:57:37,236 - mcp.server.streamable_http_manager - INFO - 95811 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 14:57:54,750 - mcp.server.streamable_http_manager - INFO - 95811 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 5b4a1f80c24c48a987287d06d645becd
+2025-07-13 14:57:57,633 - mcp.server.lowlevel.server - INFO - 95811 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
+2025-07-13 14:58:17,396 - mcp.server.lowlevel.server - INFO - 95811 - MainThread [server._handle_request:523] - Processing request of type CallToolRequest
+2025-07-13 14:58:17,396 - auth.google_auth - INFO - 95811 - MainThread [google_auth.get_authenticated_google_service:741] - [list_ga4_properties] Attempting to get authenticated analyticsadmin service. Email: 'david.muleropino@gdcgroup.com'
+2025-07-13 14:58:17,403 - googleapiclient.discovery_cache - INFO - 95811 - MainThread [__init__.autodetect:49] - file_cache is only supported with oauth2client<4.0.0
+2025-07-13 14:58:17,405 - auth.google_auth - INFO - 95811 - MainThread [google_auth.get_authenticated_google_service:803] - [list_ga4_properties] Successfully authenticated analyticsadmin service for user: david.muleropino@gdcgroup.com
+2025-07-13 14:58:17,406 - ga4.ga4_tools - INFO - 95811 - MainThread [ga4_tools.list_ga4_properties:185] - [list_ga4_properties] Getting properties for user: david.muleropino@gdcgroup.com
+2025-07-13 14:58:17,406 - ga4.ga4_tools - INFO - 95811 - MainThread [ga4_tools.list_ga4_properties:195] - [list_ga4_properties] Fetching with filter: parent:accounts/27866493
+2025-07-13 14:58:18,158 - ga4.ga4_tools - INFO - 95811 - MainThread [ga4_tools.list_ga4_properties:209] - [list_ga4_properties] Fetching sub-properties for 2 properties
+2025-07-13 14:58:18,158 - ga4.ga4_tools - INFO - 95811 - MainThread [ga4_tools.list_ga4_properties:216] - [list_ga4_properties] Fetching sub-properties with filter: parent:properties/267108084
+2025-07-13 14:58:18,961 - ga4.ga4_tools - INFO - 95811 - MainThread [ga4_tools.list_ga4_properties:224] - [list_ga4_properties] Found 25 sub-properties for property 267108084
+2025-07-13 14:58:18,962 - ga4.ga4_tools - INFO - 95811 - MainThread [ga4_tools.list_ga4_properties:216] - [list_ga4_properties] Fetching sub-properties with filter: parent:properties/360065628
+2025-07-13 14:58:19,191 - ga4.ga4_tools - INFO - 95811 - MainThread [ga4_tools.list_ga4_properties:227] - [list_ga4_properties] No sub-properties found for property 360065628
+2025-07-13 15:08:35,794 - mcp.server.streamable_http_manager - INFO - 95811 - MainThread [streamable_http_manager.run:113] - StreamableHTTP session manager shutting down
+2025-07-13 15:08:40,841 - core.utils - INFO - 99381 - MainThread [utils.check_credentials_directory_permissions:35] - Credentials directory permissions check passed: /Users/davidpino/.google_workspace_mcp/credentials
+2025-07-13 15:08:40,842 - core.server - INFO - 99381 - MainThread [server.set_transport_mode:54] - Transport mode set to: streamable-http
+2025-07-13 15:08:40,853 - mcp.server.streamable_http_manager - INFO - 99381 - MainThread [streamable_http_manager.run:109] - StreamableHTTP session manager started
+2025-07-13 15:08:53,452 - mcp.server.streamable_http_manager - INFO - 99381 - MainThread [streamable_http_manager._handle_stateful_request:224] - Created new transport with session ID: 600910b965c94709988a6970f0239794
+2025-07-13 15:08:56,085 - mcp.server.lowlevel.server - INFO - 99381 - MainThread [server._handle_request:523] - Processing request of type ListToolsRequest
