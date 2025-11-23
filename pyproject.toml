@@ -1,0 +1,16 @@
+[project]
+name = "mcp-ga"
+authors = [
+    { name = "damupi", email = "damupi@hotmail.com" }
+]
+version = "0.1.0"
+description = "Google Analytics MCP Server - A Model Context Protocol server providing LLMs with access to Google Analytics 4 data"
+
+requires-python = ">=3.13"
+dependencies = [
+    "fastmcp>=2.13.1",
+    "google-api-python-client>=2.0.0",
+    "google-auth>=2.0.0",
+    "google-auth-oauthlib>=1.0.0",
+    "google-auth-httplib2>=0.2.0",
+]

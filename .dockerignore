@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual Environment
+venv/
+env/
+.venv
+
+# Environment variables (will be passed via docker-compose)
+.env
+.env.local
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Documentation
+README.md
+DOCKER.md
+*.md
+
+# Examples
+examples/
+
+# Testing
+.pytest_cache/
+tests/
+
+# Credentials (will be mounted or passed as env vars)
+credentials.json
+token.json
+
+# Logs
+*.log
+logs/

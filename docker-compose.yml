@@ -1,0 +1,32 @@
+services:
+  mcp-ga-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mcp-ga-server
+    ports:
+      - "8000:8000"
+    environment:
+      # Google OAuth Configuration
+      - FASTMCP_SERVER_AUTH=${FASTMCP_SERVER_AUTH}
+      - FASTMCP_SERVER_AUTH_GOOGLE_CLIENT_ID=${FASTMCP_SERVER_AUTH_GOOGLE_CLIENT_ID}
+      - FASTMCP_SERVER_AUTH_GOOGLE_CLIENT_SECRET=${FASTMCP_SERVER_AUTH_GOOGLE_CLIENT_SECRET}
+      - FASTMCP_SERVER_AUTH_GOOGLE_BASE_URL=${FASTMCP_SERVER_AUTH_GOOGLE_BASE_URL:-http://localhost:8000}
+      - FASTMCP_SERVER_AUTH_GOOGLE_REQUIRED_SCOPES=${FASTMCP_SERVER_AUTH_GOOGLE_REQUIRED_SCOPES}
+      - FASTMCP_SERVER_SECRET=dev-secret-key-change-in-production
+      - FASTMCP_DEBUG=true
+    env_file:
+      - .env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge
