@@ -1,7 +1,7 @@
 [project]
 name = "mcp-ga"
 authors = [
-    { name = "damupi", email = "damupi@hotmail.com" }
+    { name = "damupi", email = "damupi[at]hotmail.com" }
 ]
 version = "0.1.0"
 description = "Google Analytics MCP Server - A Model Context Protocol server providing LLMs with access to Google Analytics 4 data"
